@@ -3,7 +3,7 @@ import './dice.css'
 
 class DiceApp extends Component {
 
-    state = {dice1: 0, dice2: 0}
+    state = {dice1: 1, dice2: 1}
 
     diceRoll = () => {
 

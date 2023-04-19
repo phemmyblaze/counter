@@ -5,11 +5,11 @@ class CounterApp extends Component {
     state= {count:0}
 
     onDecrease =() => {
-        this.setState((prevstate=>({count:prevstate.count -1 })))
+        this.setState((prevstate=>({count: prevstate.count > 0 ? prevstate.count -2 : prevstate.count - 0})))
     }
 
     onIncrease=()=>{
-        this.setState((prevstate=>({count:prevstate.count + 1})))
+        this.setState((prevstate=>({count:  prevstate.count < 10 ? prevstate.count + 2 : prevstate.count + 0})))
     }
     render() {
         const {count}=this.state

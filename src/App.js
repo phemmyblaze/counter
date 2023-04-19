@@ -1,10 +1,11 @@
-import CounterApp from './component/Count';
+// import CounterApp from './component/Count';
+import Dice from './component/Dice';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <CounterApp/>
+      <Dice/>
     </div>
   );
 }
